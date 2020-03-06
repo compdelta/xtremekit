@@ -47,15 +47,15 @@
     </div>
   </div>
 
-  <audio data-key="65" src="sounds/AmenKick.mp3"></audio>
-  <audio data-key="83" src="sounds/AmenSnare.mp3"></audio>
-  <audio data-key="68" src="sounds/AmenCrash.mp3"></audio>
-  <audio data-key="70" src="sounds/909Kick.mp3"></audio>
-  <audio data-key="71" src="sounds/909Snare.mp3"></audio>
-  <audio data-key="72" src="sounds/airhorn.mp3"></audio>
-  <audio data-key="74" src="sounds/gabba.mp3"></audio>
-  <audio data-key="75" src="sounds/ravestab.mp3"></audio>
-  <audio data-key="76" src="sounds/digitalhardcore.mp3"></audio>
+  <audio preload="auto" data-key="65" src="sounds/AmenKick.mp3"></audio>
+  <audio preload="auto" data-key="83" src="sounds/AmenSnare.mp3"></audio>
+  <audio preload="auto" data-key="68" src="sounds/AmenCrash.mp3"></audio>
+  <audio preload="auto" data-key="70" src="sounds/909Kick.mp3"></audio>
+  <audio preload="auto" data-key="71" src="sounds/909Snare.mp3"></audio>
+  <audio preload="auto" data-key="72" src="sounds/airhorn.mp3"></audio>
+  <audio preload="auto" data-key="74" src="sounds/gabba.mp3"></audio>
+  <audio preload="auto" data-key="75" src="sounds/ravestab.mp3"></audio>
+  <audio preload="auto" data-key="76" src="sounds/digitalhardcore.mp3"></audio>
 
 <script>
 
@@ -75,7 +75,7 @@ function removeTransition(e) {
 
 const keys = document.querySelectorAll('.key');
 keys.forEach(key => key.addEventListener('transitionend', removeTransition));
-window.addEventListener('keydown', playSound);
+document.addEventListener('keydown', playSound);
 
 </script>
 
